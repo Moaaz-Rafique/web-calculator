@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 40ms;
 }
 .calc{
     width: 50%;
@@ -53,8 +54,8 @@ button:hover{
 }
 button:active {
     background-color: #555;
-    box-shadow: 0 .5px #666;
-    transform: translateY(1px);
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
   }
   .inputDiv{
       width: 90%;
@@ -65,7 +66,7 @@ button:active {
 
   }
 input{
-    
+    transition: .5s;    
     margin-top: 10px;
     width: 100%;
     min-width: fit-content;
