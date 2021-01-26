@@ -1,8 +1,10 @@
 var a=document.getElementById("txt")
 
-
 function fnc(btn){
+    a.style.backgroundColor="rgb(162, 182, 122)"
     if(a.value.length>=10){
+        a.style.backgroundColor="rgb(190, 100, 80)"
+        
         return
     }
     var symbols="/*-+"
@@ -14,6 +16,7 @@ function fnc(btn){
             return
         } 
         else if(a.value.length==0){
+            a.style.backgroundColor="rgb(190, 100, 80)"
             return
         }
         else{
@@ -25,11 +28,14 @@ function fnc(btn){
     }
 }
 function clrTxt(){
+    a.style.backgroundColor="rgb(162, 182, 122)"
     a.value=""
 }
 function rmvLast(){
+    a.style.backgroundColor="rgb(162, 182, 122)"
     a.value=a.value.slice(0,a.value.length-1)
 }
 function rslt(){
+    a.style.backgroundColor="rgb(162, 182, 122)"
     a.value=eval(a.value)
 }
