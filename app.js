@@ -1,4 +1,5 @@
 var a=document.getElementById("txt")
+var symbols="/*-+"
 
 function fnc(btn){
     a.style.backgroundColor="rgb(162, 182, 122)"
@@ -7,7 +8,6 @@ function fnc(btn){
         
         return
     }
-    var symbols="/*-+"
     var ch=btn.innerText
     if(symbols.includes(ch)){
         
@@ -37,5 +37,10 @@ function rmvLast(){
 }
 function rslt(){
     a.style.backgroundColor="rgb(162, 182, 122)"
-    a.value=eval(a.value)
+    if(symbols.includes(a.value[a.value.length-1])){
+        a.value=eval(a.value.slice(0,a.value.length-1))
+    }
+    else
+        a.value=eval(a.value)
+
 }
