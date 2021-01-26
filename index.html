@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=VT323&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calc">
+        <div class="inputDiv">            
+            <input type="text" maxlength="5" readonly id="txt" >
+        </div>
+        <div class="btns">
+            <div class="numbers">
+                <button id="clrButton" onclick="clrTxt()">C</button>
+                <button onclick="rmvLast(this)">&#8592</button>
+            </div><div class="numbers">
+                <button onclick="fnc(this)">7</button>
+                <button onclick="fnc(this)">8</button>
+                <button onclick="fnc(this)">9</button>
+                <button onclick="fnc(this)">/</button>
+            </div>
+            <div class="numbers">
+                <button onclick="fnc(this)">4</button>
+                <button onclick="fnc(this)">5</button>
+                <button onclick="fnc(this)">6</button>
+                <button onclick="fnc(this)">*</button>
+            </div>
+            <div class="numbers">
+                <button onclick="fnc(this)">1</button>
+                <button onclick="fnc(this)">2</button>
+                <button onclick="fnc(this)">3</button>
+                <button onclick="fnc(this)">-</button>
+            </div>
+            <div class="numbers">
+                <button onclick="fnc(this)">.</button>
+                <button onclick="fnc(this)">0</button>
+                <button onclick="rslt()">=</button>
+                <button onclick="fnc(this)">+</button>
+            </div>
+        </div>
+        <div class="symbols">
+            
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
